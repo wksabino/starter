@@ -69,7 +69,7 @@ def verify_field():
 
 def select_user():
 
-	db = MySQLdb.connect(host='127.0.0.1', user='root', password='willette', database='mydatabase')
+	db = MySQLdb.connect(host='127.0.0.1', user='root', password='*****', database='mydatabase')
 	cur = db.cursor()
 	select_val = "SELECT * FROM users WHERE username = %s"
 	user = username_info,
