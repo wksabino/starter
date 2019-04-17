@@ -117,7 +117,7 @@ def pw_strength():
 
 def register_user():
 
-	db = MySQLdb.connect(host='127.0.0.1', user='root', password='willette', database='mydatabase')
+	db = MySQLdb.connect(host='127.0.0.1', user='root', password='*****', database='mydatabase')
 	cur = db.cursor()
 	sql_insert = '''
 			INSERT INTO mydatabase.users(username, password)
@@ -167,7 +167,7 @@ def login_verify():
 
 	print('username: ' + username1)
 
-	db = MySQLdb.connect(host='127.0.0.1', user='root', password='willette', database='mydatabase')
+	db = MySQLdb.connect(host='127.0.0.1', user='root', password='*****', database='mydatabase')
 	cur = db.cursor()
 	select_val = "SELECT password FROM users WHERE username = %s"
 	user = username1,
